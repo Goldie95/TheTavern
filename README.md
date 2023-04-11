@@ -24,6 +24,4 @@ play loop.
 I thin what i have done so far works ok, there could definitely be improvments,
 but for now i think its a fun game to play, but it was much more fun to build it.
 
-testing a change. 
-
 
