@@ -38,6 +38,7 @@ class Game:
             'Puzzle Room One': Locations.puzzleRoom1.puzzleRoom1(),
             'Puzzle Room Two': Locations.puzzleRoom2.puzzleRoom2(),
             'Puzzle Room Three': Locations.puzzleRoom3.puzzleRoom3(),
+            'End Game Death': Locations.endGameDeath.endGameDeath(),
         }
         self.current_room = 'Entrance'
         self.just_entered = True
