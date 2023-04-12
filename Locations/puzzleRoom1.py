@@ -31,7 +31,7 @@ story3 = """
                 ***********************************
 
 """
-story2 = """
+story4 = """
 ---------------------------------------------------------------------------------------------------------------
         "Im waiting!........"
 
@@ -49,13 +49,18 @@ answerCorrect = """
 
         The Dolls head did a full rotation and the back of the dolls head opened to reveal a key. The key is in the 
         shape of a 8 pointed star. You place it in your pocket. 
+        
+                                         .___,             |-|
+                                        /    |\____________| | 
+                                        |()  | ____________  |
+                                        \    |/            | |
+                                         `---'             |_|
 
         You turn around and leave the puzzle room.
 
 """
 questions = [
-        ("What has a head and a tail, but no body?", "coin"),    
-        ("What has a heart that doesn't beat?", "artichoke"),    
+        ("What has a head and a tail, but no body?", "coin"),       
         ("What gets wet while drying?", "towel"),    
         ("What is always in front of you but can't be seen?", "future"),    
         ("What has one eye but cannot see?", "needle"),    

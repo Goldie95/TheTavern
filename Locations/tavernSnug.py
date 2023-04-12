@@ -23,7 +23,7 @@ story2 = """
             | inside the juniors room    |.
             | but to make it easy i      |.
             | thought id give it to you  |.
-            | straight, the code is ONE, |.
+            | straight, the code is EIGHT|.
             WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
             
         The note ends abruptly, it seems the parhment was torn and seems like drops of blood stain the eges.

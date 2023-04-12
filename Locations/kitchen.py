@@ -4,6 +4,15 @@ story1 = """
         You search the kitchen and there is no food. You turn the tap at the sink, but nothing happens.
         Theres nothing worth noting in the kitchen, but the lock on the door to the outside looks odd, 
         the keyhole isnt a typical keyhole, but int he shape of a 8 pointed star.
+        
+        Pick Your next action:
+        ***********************************
+        2) Go down to the basement.
+        3) Try the door to the north that leads outside again.
+        4) Open the north door in the nook.
+        5) Open the south door in the nook.
+        6) Go to the bar area.
+        ***********************************
 """
 door1 = """
 ---------------------------------------------------------------------------------------------------------------
@@ -89,7 +98,7 @@ class kitchen:
             return 'story'
         elif action == '2':
             print (door1)
-            return 'Basement'
+            return 'basement'
 # I need this section to unlock the door if they have the key (self.key (star key = Y))
         elif action == '3':
             if game.keys['starKey'] == 'Y':

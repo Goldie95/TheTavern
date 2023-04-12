@@ -13,6 +13,8 @@ import Locations.upstairsHall
 import Locations.puzzleRoom1
 import Locations.puzzleRoom2
 import Locations.puzzleRoom3
+import Locations.basement
+import Locations.endGameDeath
         
 class Game:
     def __init__(self):
@@ -38,6 +40,7 @@ class Game:
             'Puzzle Room One': Locations.puzzleRoom1.puzzleRoom1(),
             'Puzzle Room Two': Locations.puzzleRoom2.puzzleRoom2(),
             'Puzzle Room Three': Locations.puzzleRoom3.puzzleRoom3(),
+            'Basement': Locations.basement.basement(),
             'End Game Death': Locations.endGameDeath.endGameDeath(),
         }
         self.current_room = 'Entrance'
@@ -52,6 +55,17 @@ class Game:
             *    ██    ██   ██ ██             ██    ██   ██  ██  ██  ██      ██   ██ ██  ██ ██ *    
             *    ██    ██   ██ ███████        ██    ██   ██   ████   ███████ ██   ██ ██   ████ * 
             ************************************************************************************
+
+                              _   _._
+                             |_|-'_~_`-._
+                          _.-'-_~_-~_-~-_`-._
+                      _.-'_~-_~-_-~-_~_~-_~-_`-._
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                       |  []  []   []   []  [] |
+                       |           __    ___   |   
+                     ._|  []  []  | .|  [___]  |_._._._._._._._._._._._._._._._._.  
+                     |=|________()|__|()_______|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=| 
+                   ^^^^^^^^^^^^^^^ === ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
                                       Created by: Louis Goldsbrough
                                       
                                          Please select an option:
