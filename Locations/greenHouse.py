@@ -73,7 +73,7 @@ class greenHouse:
             return 'story'
         elif action == '3':
             print (door1)
-            return 'diningRoom'
+            return 'Yard East'
         elif action == "stats":
             return 'stats'
         else:

@@ -62,7 +62,7 @@ class yardEast:
         elif action == '3':
             if game.keys['triangleKey'] == 'Y':
                 print (door2)
-                return 'End Game Complete'
+                return 'End Game Puzzle'
             else:
                 self.story = lockedoorstory
                 return 'story'

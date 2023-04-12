@@ -80,12 +80,12 @@ class upstairsHall:
                 print (door1)
                 return 'Puzzle Room One'
         elif action == '2':
-            if game.keys['squareKey'] == 'Y':
-                print (door2)
-                return 'Puzzle Room Two'
-            elif game.puzzlecomplete['Puzzle2'] == 'Y':
+            if game.puzzlecomplete['Puzzle2'] == 'Y':
                 print (puzzlecomplete)
                 return 'story'
+            elif game.keys['squareKey'] == 'Y':
+                print (door2)
+                return 'Puzzle Room Two'
             else:
                 self.story = lockedoorstory
                 return 'story'
