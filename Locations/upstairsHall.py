@@ -31,7 +31,19 @@ wrongcodestory = """
         4) Go back down the stairs to the mess hall.
         ***********************************
 """
-
+puzzlecomplete = """
+---------------------------------------------------------------------------------------------------------------
+        You try the door but it doesnt budge. You have already completed this challenge.
+        
+        Pick Your next action:
+        ***********************************
+        1) Open Door Number 1.
+        2) Open Door Number 2.
+        3) Open Door Number 3.
+        4) Go back down the stairs to the mess hall.
+        ***********************************
+    
+"""
 class upstairsHall:
     def __init__(self):
         self.description = """
@@ -61,22 +73,33 @@ class upstairsHall:
 
     def perform_action(self, game, action):
         if action == '1':
-            print (door1)
-            return 'Puzzle Room One'
+            if game.puzzlecomplete['Puzzle1'] == 'Y':
+                print (puzzlecomplete)
+                return 'story'
+            else:
+                print (door1)
+                return 'Puzzle Room One'
         elif action == '2':
             if game.keys['squareKey'] == 'Y':
                 print (door2)
                 return 'Puzzle Room Two'
+            elif game.puzzlecomplete['Puzzle2'] == 'Y':
+                print (puzzlecomplete)
+                return 'story'
             else:
                 self.story = lockedoorstory
                 return 'story'
         elif action == '3':
-            code = input("Enter the code: ")
-            if code == '123':
-                return 'Puzzle Room Three'
-            else:
-                print (wrongcodestory)
+            if game.puzzlecomplete['Puzzle3'] == 'Y':
+                print (puzzlecomplete)
                 return 'story'
+            else:
+                code = input("Enter the code: ")
+                if code == '843':
+                    return 'Puzzle Room Three'
+                else:
+                    print (wrongcodestory)
+                    return 'story'
         elif action == '4':
             print (door1)
             return 'Tavern Hall'

@@ -98,8 +98,7 @@ class kitchen:
             return 'story'
         elif action == '2':
             print (door1)
-            return 'basement'
-# I need this section to unlock the door if they have the key (self.key (star key = Y))
+            return 'Basement'
         elif action == '3':
             if game.keys['starKey'] == 'Y':
                 print (door2)

@@ -15,6 +15,8 @@ import Locations.puzzleRoom2
 import Locations.puzzleRoom3
 import Locations.basement
 import Locations.endGameDeath
+import Locations.endGamePuzzle
+import Locations.endGameComplete
         
 class Game:
     def __init__(self):
@@ -24,6 +26,11 @@ class Game:
             'triangleKey': 'N',
             'squareKey': 'N',
         }
+        self.puzzlecomplete = {
+            'Puzzle1': 'N',
+            'Puzzle2': 'N',
+            'Puzzle3': 'N',
+        }
         self.name = None
         self.rooms = {
             'Entrance': Locations.entrance.entrance(),
@@ -31,7 +38,7 @@ class Game:
             'Tavern Snug': Locations.tavernSnug.tavernSnug(),
             'Bar Area': Locations.barArea.barArea(),
             'Kitchen': Locations.kitchen.kitchen(),
-            'Master Bedroom': Locations.masterBedroom.masterBedroom(),
+            'Masters Bedroom': Locations.masterBedroom.masterBedroom(),
             'Masters Sons Bedroom': Locations.mastersSonsBedroom.mastersSonsBedroom(),
             'Yard North': Locations.yardNorth.yardNorth(),
             'Yard East': Locations.yardEast.yardEast(),
@@ -42,6 +49,8 @@ class Game:
             'Puzzle Room Three': Locations.puzzleRoom3.puzzleRoom3(),
             'Basement': Locations.basement.basement(),
             'End Game Death': Locations.endGameDeath.endGameDeath(),
+            'End Game Puzzle': Locations.endGamePuzzle.endGamePuzzle(),
+            'End Game Complete': Locations.endGameComplete.endGameComplete(),
         }
         self.current_room = 'Entrance'
         self.just_entered = True

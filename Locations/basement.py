@@ -3,7 +3,7 @@ story1 = """
         The only thing to search is the old barrels. Most of which are empty, the last one you search contains 
         a skeleton, you see its holding a torn peice of parchment and open it up, it reads:
         
-            /\/\/\/\
+             /\/\/\/|
             | FOUR, >
             |       >
             | Good L> 
@@ -11,6 +11,10 @@ story1 = """
              WWWWWW>
              
         Seems like its been torn from a larger peice of parchment.
+        Pick Your next action:
+        ***********************************
+        2) Go back up to the kitchen.
+        ***********************************
 
 """
 door1 = "You walk back up the stairs to the kitchen."
@@ -24,8 +28,10 @@ class basement:
         ********************************************************************************
         
         Pick Your next action:
+        ***********************************
         1) Search the basement.
         2) Go back up to the kitchen.
+        ***********************************
         """
         
         self.story = ""

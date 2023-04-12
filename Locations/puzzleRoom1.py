@@ -128,6 +128,7 @@ class puzzleRoom1:
                 useranswer = input("Answer: ")
                 if useranswer.lower() == answer:
                     game.keys['starKey'] = 'Y'
+                    game.puzzlecomplete['Puzzle1'] = 'Y'
                     riddlepass = True
                     print(answerCorrect)
                     return 'Upstairs Hall'
