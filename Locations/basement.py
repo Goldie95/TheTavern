@@ -12,7 +12,8 @@ story1 = """
              
         Seems like its been torn from a larger peice of parchment.
         Pick Your next action:
-        ***********************************
+        ***********************************3
+        
         2) Go back up to the kitchen.
         ***********************************
 

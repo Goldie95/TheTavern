@@ -8,7 +8,13 @@ story1 = """
         towards a patch of dirt. You grab the spade and begin to dig and find an old bottle and a peice of
         parchment inside. You remove the cork stopper from the bottle and read:
         
-            "THREE. Luck traveller."
+                                                   <^^^^^^^^^^^^^^^^^^|
+                                                   < THREE.           |.
+                                                   < Luck Traveller.  |.
+                                        ^^^^^^^^^^^/                  |.
+                                        |   _________________________|___
+                                        |  /                            /.
+                                         \_____________________________/.
         
         There was also another note, that seems to have been scribbled in red ink, probably blood in addition
         to the orginal note.

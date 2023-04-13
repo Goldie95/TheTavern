@@ -16,7 +16,7 @@ class endGameDeath:
         
         self.story = ""
 
-        
+        3
 
     def perform_action(self, game, action):
         if action == 'q':
